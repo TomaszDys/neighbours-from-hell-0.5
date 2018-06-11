@@ -1,0 +1,59 @@
+﻿/*Style dla elementu header*/
+header{
+    text-align: center;
+}
+/*Style dla elementu body*/
+#all-elements {
+    padding: 20px;
+}
+/*Style dla sekcji main container*/
+#main-container {
+    border-style: dotted solid;
+    border-radius: 2px;
+    /*Źródło*/
+    background: #0B486B; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F56217, #0B486B); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F56217, #ed9100); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+/*Style sekcji klikania*/
+#clicking-area {
+    border: 2px solid black;
+    text-align:center;
+    background-color:white;
+    cursor: pointer;
+}
+/*Style sekcji sklepu*/
+.shop-container {
+    border: 2px solid black;
+    background-color: bisque;
+}
+/*Style zdjęcia pozycji w sklepie*/
+.shop-item{
+    width: 80px;
+    height: 60px;
+    float: left;
+    margin: 5px;
+}
+/*Style pierwszego obrazka końcowego w sklepie*/
+.shop-item-special-1{
+    width: 150px;
+    height: 190px;
+    float: left;
+}
+/*Style drugiego obrazka końcowego w sklepie*/
+.shop-item-special-2 {
+    width: 150px;
+    height: 190px;
+    float: right;
+}
+/*style obrazka sąsiada na fotelu*/
+.on-chair{
+    width:70%;
+    height:auto;
+}
+/*style wyskakujących okien*/
+.point-alert {
+    position: absolute;
+    z-index: 999;
+    pointer-events: none;
+}

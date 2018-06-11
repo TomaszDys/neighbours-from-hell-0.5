@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<!-- Część odpowiedzialna za elementy konfiguracyjne -->
+<head>
+    <!-- Ustawienie kodowania strony www-->
+    <meta charset="utf-8" />
+    <!-- Dołączenie pliku ze stylami-->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <title></title>
+</head>
+<!--Część przechowująca informacje-->
+<body id="all-elements">
+    <!--Header z logo gry-->
+    <header>
+        <img src="Images/logo.png" />
+    </header>
+    <!--Główna sekcja gry-->
+    <section>
+        <div id="main-container" class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <!--Ilość punktów-->
+                    <h1>Punkty: <span id="points"></span></h1>
+                    <h2>Punkty na sekundę: <span id="points-per-second"></span></h2>
+                    <!--Kontener do klikania-->
+                    <div onclick="addPointsClick(event)" id="clicking-area">
+                        <img class="on-chair" src="Images/statycznie.png" />
+                        <img src="Images/woody.gif" />
+                    </div>
+                </div>
+                <!--Kontener sklepu-->
+                <div class="col-md-6">
+                    <p>Podpowiedź: kilknij w sąsiada</p>
+                    <h1>Sklep</h1>
+                    <div class="row shop-container">
+                    <!--poszczególne elementy sklepu-->
+                        <div onclick="buyEgg(event)" class="col-md-12">
+                            <hr />
+                            <img class="shop-item" src="Images/jajko.PNG" />
+                            <h5>Jajko - 50pkt</h5>
+                            <p>Rozbite na głowie/fotelu, sąsiad nie będzie zadowolony.</p>
+                        </div>
+                        <div onclick="buyPins(event)" class="col-md-12">
+                            <hr />
+                            <img class="shop-item" src="Images/szpilki.jpg" />
+                            <h5>Szpilki - 100pkt</h5>
+                            <p>Na pewno znajdzie się dla nich miejsce na fotelu sąsiada.</p>
+                        </div>
+                        <div onclick="buySaw(event)" class="col-md-12">
+                            <hr />
+                            <img class="shop-item" src="Images/piła.PNG" />
+                            <h5>Piła - 500pkt</h5>
+                            <p>Możliwe, że kombinowanie z nią przy fotelu będzie łatwiejsze.</p>
+                        </div>
+                        <div onclick="buyPills(event)" class="col-md-12">
+                            <hr />
+                            <img class="shop-item" src="Images/przeczyszczajacy.PNG" />
+                            <h5>Tabletki na przeczyszczenie - 1500pkt</h5>
+                            <p>Troszeczkę przyśpieszą nerwy sąsiada.</p>
+                        </div>
+                        <div onclick="buyFinisher(event)" class="col-md-12">
+                            <hr />
+                            <img class="shop-item-special-1" src="Images/finisher.PNG" />
+                            <img class="shop-item-special-2" src="Images/finiszer2.PNG" />
+                            <h2 class="text-center">
+                                Finiszer
+                                <br />
+                                -
+                                <br />
+                                999999pkt
+                                <br />
+                                <button class="btn btn-danger">KUP</button>
+                            </h2>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer-block"></footer>
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <script src="Scripts/popper.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
